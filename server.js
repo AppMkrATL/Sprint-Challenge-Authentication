@@ -23,7 +23,7 @@ server.use(errors);
 
 server.get('/', (req, res) => {
 
-  res.send('<h1>Authentication Week:  auth-ii</h1>   <h3>Sam Khaled</h3>');
+  res.send('<h1>Authentication Week:  <br><br><br>Sprint-Challenge-Authentication</h1>   <h3>Sam Khaled</h3>');
 });
 
 
