@@ -19,10 +19,13 @@ configureRoutes(server);
 // middleware errors
 server.use(errors);
 
-// not found - 404
-server.use((req, res) => {
-  res.status(404).send(`<h1>404: resource "${req.url}" not found</h1>`);
+
+
+server.get('/', (req, res) => {
+
+  res.send('<h1>Authentication Week:  auth-ii</h1>   <h3>Sam Khaled</h3>');
 });
+
 
 module.exports = {
   server,
